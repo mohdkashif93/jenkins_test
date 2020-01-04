@@ -1,5 +1,4 @@
-from src.project_utils import remove_punctuation
-from src.word_count import get_word_count
+from src.project_utils import remove_punctuation, get_word_count
 import pytest
 import os
 
@@ -15,7 +14,7 @@ def test_remove_punctuation(input_str, output_str):
 
 def test_get_word_count():
     curr_dir = os.getcwd()
-    input_filename = os.path.join(curr_dir, 'tests/test_file.txt')
+    input_filename = os.path.join(curr_dir, 'test_file.txt')
     actual_word_dict = get_word_count(input_filename)
     expected_word_dict = {'Hello': 1,
                           'I': 2,

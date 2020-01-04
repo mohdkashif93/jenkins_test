@@ -1,5 +1,19 @@
 import string
+from _collections import defaultdict
 import csv
+
+
+def get_word_count(input_filename):
+    import os
+    print(os.getcwd())
+    with open(input_filename) as f_input:
+        lines = f_input.readlines()
+        word_dict = defaultdict(int)
+        for line in lines:
+            clean_line = remove_punctuation(line)
+            for word in clean_line.split(' '):
+                word_dict[word] += 1
+    return word_dict
 
 
 def remove_punctuation(my_str):
