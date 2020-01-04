@@ -20,5 +20,5 @@ if __name__ == "__main__":
     word_dict = get_word_count(inp_filename)
     print("Output from get_word_count is")
     print(word_dict)
-    print("Writing to file ", out_filename)
+    print("Writing to file named", out_filename)
     dict_to_file(word_dict, out_filename)
