@@ -5,7 +5,7 @@ import os
 
 @pytest.mark.parametrize("input_str, output_str",[
     ('hello!123.', 'hello123'),
-    ('Goodbye!!!!!!', 'Goodbye!!'),
+    ('Goodbye!!!!!!', 'Goodbye'),
     ('YOLO! Hey! I am back.', 'YOLO Hey I am back'),
 ])
 def test_remove_punctuation(input_str, output_str):
