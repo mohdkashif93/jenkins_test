@@ -4,8 +4,10 @@ import csv
 
 
 def get_word_count(input_filename):
-    import os
-    print(os.getcwd())
+    '''
+    Takes a text file as input and returns
+    the word count as Python Dictionary
+    '''
     with open(input_filename) as f_input:
         lines = f_input.readlines()
         word_dict = defaultdict(int)
@@ -17,6 +19,9 @@ def get_word_count(input_filename):
 
 
 def remove_punctuation(my_str):
+    '''
+    Removes punctuation from string
+    '''
     clean_str = my_str.translate(str.maketrans('', '', string.punctuation))
     return clean_str
 
