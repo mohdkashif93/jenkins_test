@@ -18,4 +18,4 @@ if __name__ == "__main__":
 
     dict_to_file(word_dict, out_filename)
 
-    print("Done processing!")
+    print("Done processing! Exiting Everything!")
