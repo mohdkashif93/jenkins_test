@@ -1,2 +1,3 @@
 Hello! I am a string! I am test string!
 This is another string. I am not the same as first string!!
+Hello! I have added a new string!
